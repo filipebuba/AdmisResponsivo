@@ -54,7 +54,7 @@ body {
 
 .container{
     display: grid;
-    width: 96;
+    width: 95%;
     margin: 0 auto;
     gap: 1.8rem;
     grid-template-columns: 14rem auto 23rem;
@@ -334,3 +334,186 @@ main .insights small {
     display: block;
 }
  /* =========== RECENT ORDERS ==========*/
+main .recent-orders{
+    margin-top: 2rem;
+}
+
+main .recent-orders h2 {
+    margin-bottom: 0.8rem;
+}
+
+main .recent-orders table {
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-border-);
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+main .recent-orders table:hover {
+    box-shadow: none;
+}
+
+main table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+main table tbody tr:last-child td {
+    border: none;
+}
+
+main .recent-orders a {
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary)
+}
+
+/* =========== RIGHTS =========== */
+
+.right{
+    margin-top: 1.4rem;
+}
+
+.right .top{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.right .top button {
+    display: none;
+}
+
+.right .theme-toggler {
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right .theme-toggler span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .theme-toggler span.active {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--border-radius-1)
+}
+
+.right .top .profile {
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+
+/* ============ RECENT UPDATES ================= */
+.right .recent-updates{
+    margin-top: 1rem;
+
+}
+
+.right .recent-updates h2{
+    margin-bottom: 0.8rem;
+    
+}
+
+.right .recent-updates .updates {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.right .recent-updates .updates:hover {
+    box-shadow: none;
+}
+
+.right .recent-updates .updates .update {
+    display: grid;
+    grid-template-columns: 20.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ============ SALES ANALYTICS ============ */
+.right .slaes-analytics {
+    margin-top: 2rem;
+}
+
+.right .slaes-analytics h2{
+    margin-bottom: 0.8rem;
+}
+
+.right .slaes-analytics .item{
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--color-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.right .slaes-analytics .item:hover {
+    box-shadow: none;
+}
+
+.right .slaes-analytics .item .right {
+    display: flex;
+   justify-content: space-between;
+   align-items: start;
+   margin: 0;
+   width: 100%;
+}
+
+.right .slaes-analytics .item .icon {
+    padding: 0.6rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    background: var(--color-primary);
+    display: flex;
+}
+
+.right .slaes-analytics .item.offline .icon {
+    background: var(--color-danger);
+}
+
+.right .slaes-analytics .item.Customers .icon {
+    background: var(--color-success);
+}
+
+.right .slaes-analytics .add-product {
+    background-color: transparent;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .slaes-analytics .add-product div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.right .slaes-analytics .add-product div h3 {
+    font-weight: 600;
+}
