@@ -97,7 +97,8 @@ h4{
 }
 
 h5{
-    font-size: 0.77rem;
+    font-size: 0.80rem;
+    
 }
 
 small{
@@ -131,6 +132,7 @@ b{
 }
 .success{
     color: var(--color-success);
+    
 }
 .warning{
     color: var(--color-warning);
@@ -163,7 +165,7 @@ aside .close{
 
 /* ============== SIDEBAR ============== */
 aside .sidebar{
-    background: white;
+    background: var(--color-background);
     display: flex;
     flex-direction: column;
     height: 86vh;
@@ -489,7 +491,7 @@ main .recent-orders a {
    justify-content: space-between;
    align-items: start;
    margin: 0;
-   width: 100%;
+   width: 85%;
 }
 
 .right .slaes-analytics .item .icon {
